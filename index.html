@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Post</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="main">
+
+
+
+
+    <div class="container">
+      <div class="wrap">
+        <section class="post">
+          <header>Creat post <span><i class="fa-solid fa-x"></i></span></header>
+
+          <form action="#">
+            <div class="content">
+              <img src="img/20220415_221319.jpg" alt="">
+              <div class="details">
+                <p>Fahad Ali</p>
+                <div class="privecy">
+                  <i class="fas fa-user-friends"></i>
+                  <span>friends</span>
+                  <i class="fas fa-caret-down"></i>
+
+                </div>
+              </div>
+            </div>
+            <textarea id="writePost" placeholder="What's on your mind, Fahad?" required></textarea>
+            <div class="them-emoji">
+              <img class="change" src="img/Aa_square.png" alt="" width="50px">
+              <input id="clr" type="color" onchange="f10(this)">
+              <img src="img/emojiSmile.png" alt="">
+            </div>
+            <div class="option">
+              <p>Add to Your Post</p>
+              <ul class="list">
+                <li><img src="img/photo-video.png" alt=""></li>
+                <li><img src="img/tag-icon.png" alt=""></li>
+                <li><img src="img/feelingIcon.png" alt=""></li>
+                <li><img src="img/check-in-icon.png" alt=""></li>
+                <li><img src="img/LifeEvent.png" alt=""></li>
+              </ul>
+            </div>
+            <button id="postSave" onclick="post()">Post</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+
+    <ul class="list" id="list">
+
+
+
+      <div class="container2" id="container2">
+        <div class="post-body">
+          <div class="user-info">
+            <div class="user">
+              <img class="userPic" src="img/eye blue.jpg" alt="">
+              <p>Ghous Ahmed</p>
+            </div>
+            <div class="post-option-icon">
+              <i class="fas fa-ellipsis-h"></i>
+              <span>x</span>
+            </div>
+          </div>
+          <div class="date-time">
+            <p> <span id="time"> Mon 10 11:26 PM </span>. <span class="fas fa-earth"></span></p>
+          </div>
+          <div class="description" id="describ">My Last Hope ...</div>
+          <div class="post-detail">
+
+            <!-- <img src="img/userPic.jpg" alt="" class="uplaod-image"> -->
+            <div class="upload" id="show"> </div>
+            <div class="likes-comment-preview">
+              <div class="like-preview">
+                <span class="fas fa-thumbs-up"></span>
+                <span class="fas fa-heart"></span>
+                <span class="count-likes">599k</span>
+              </div>
+              <div class="comment-share-preview">
+                <span>26.8k comments</span>
+                <span>5.8k share</span>
+              </div>
+            </div>
+            <div class="like-coment-share-icon">
+              <div class="likes" tabindex="1">
+                <span class="far fa-thumbs-up"></span>
+                <i>Like</i>
+              </div>
+              <div class="comment">
+                <span class="far fa-comment"></span>
+                <i>comment</i>
+              </div>
+              <div class="share">
+                <span class="fas fa-share"></span>
+                <i>share</i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </ul>
+
+
+    <div class="container2" id="container2">
+      <div class="post-body">
+        <div class="user-info">
+          <div class="user">
+            <img class="userPic" src="img/eye blue.jpg" alt="">
+            <p> Down Fall </p>
+          </div>
+          <div class="post-option-icon">
+            <i class="fas fa-ellipsis-h"></i>
+            <span>x</span>
+          </div>
+        </div>
+        <div class="date-time">
+          <p> Mon 10 11:26 PM . <span class="fas fa-earth"></span></p>
+        </div>
+        <div class="description">My Last Hope ...</div>
+        <div class="post-detail">
+
+          <img src="img/pic post 4.jpg" alt="" class="uplaod-image">
+          <!-- <div id="upload"> 0</div> -->
+          <div class="likes-comment-preview">
+            <div class="like-preview">
+              <span class="fas fa-thumbs-up"></span>
+              <span class="fas fa-heart"></span>
+              <span class="count-likes">599k</span>
+            </div>
+            <div class="comment-share-preview">
+              <span>26.8k comments</span>
+              <span>5.8k share</span>
+            </div>
+          </div>
+          <div class="like-coment-share-icon">
+            <div class="likes" tabindex="1">
+              <span class="far fa-thumbs-up"></span>
+              <i>Like</i>
+            </div>
+            <div class="comment">
+              <span class="far fa-comment"></span>
+              <i>comment</i>
+            </div>
+            <div class="share">
+              <span class="fas fa-share"></span>
+              <i>share</i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="container2" id="container2">
+      <div class="post-body">
+        <div class="user-info">
+          <div class="user">
+            <img class="userPic" src="img/eye blue.jpg" alt="">
+            <p> Down Fall </p>
+          </div>
+          <div class="post-option-icon">
+            <i class="fas fa-ellipsis-h"></i>
+            <span>x</span>
+          </div>
+        </div>
+        <div class="date-time">
+          <p> <span id="time"> Mon 10 11:26 PM .</span> <span class="fas fa-earth"></span></p>
+        </div>
+        <div class="description">My Last Hope ...</div>
+        <div class="post-detail">
+
+          <img src="img/userPic.jpg" alt="" class="uplaod-image">
+          <!-- <div id="upload"> 0</div> -->
+          <div class="likes-comment-preview">
+            <div class="like-preview">
+              <span class="fas fa-thumbs-up"></span>
+              <span class="fas fa-heart"></span>
+              <span class="count-likes">599k</span>
+            </div>
+            <div class="comment-share-preview">
+              <span>26.8k comments</span>
+              <span>5.8k share</span>
+            </div>
+          </div>
+          <div class="like-coment-share-icon">
+            <div class="likes" tabindex="1">
+              <span class="far fa-thumbs-up"></span>
+              <i>Like</i>
+            </div>
+            <div class="comment">
+              <span class="far fa-comment"></span>
+              <i>comment</i>
+            </div>
+            <div class="share">
+              <span class="fas fa-share"></span>
+              <i>share</i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <script src="
+  https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js
+  "></script>
+  
+  <script src="app.js"></script>
+</body>
+
+</html>

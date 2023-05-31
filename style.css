@@ -1,0 +1,360 @@
+@font-face {
+    font-family: poppins;
+    src: url('Poppins-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    background: linear-gradient(#00c6ff, #0078FF);
+}
+
+
+.container {
+    width: 500px;
+    background: #ffffff;
+    box-shadow: 0 12px 28 rgba(0, 0, 0, 0.12);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+
+.post header {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: 1px solid #bfbfbf;
+    position: relative;
+}
+
+header span i {
+    position: absolute;
+    top: 22px;
+    right: 17px;
+    cursor: pointer;
+
+
+}
+
+header span i:hover {
+    background: #f0f1f4;
+}
+
+.post form {
+    margin: 20px 25px;
+}
+
+.post form :where(.content, .details .privecy) {
+    display: flex;
+    align-items: center;
+
+}
+
+.post form .content img {
+    max-width: 52px;
+    border-radius: 50px;
+}
+
+.post form .content .details {
+    margin-right: -3px 0 0 12px;
+
+}
+
+form .content .details p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+form .content .details .privecy {
+    cursor: pointer;
+    max-width: 98px;
+    font-size: 11px;
+    padding: 0 10px;
+    margin-top: 3px;
+    border-radius: 5px;
+    background: #e4e6eb;
+    justify-content: space-between;
+}
+
+.details .privecy span {
+    font-size: 13px;
+    margin-top: 1px;
+    font-weight: 500;
+}
+
+.details .privecy i:last-child {
+    font-size: 13px;
+    margin-left: 1px;
+}
+
+.post form :where(textarea, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.post form textarea {
+    font-size: 18px;
+    resize: none;
+    margin-top: 30px;
+    min-height: 100px;
+    padding: 5px 10px;
+}
+
+.post form :where(.them-emoji, .option) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form .them-emoji img {
+    cursor: pointer;
+}
+
+
+form .them-emoji img:last-child {
+    max-width: 24px;
+}
+
+form .option {
+    height: 57px;
+    border-radius: 7px;
+    padding: 0 15px;
+    margin: 15px 0;
+    border: 1px solid #b9b9b9;
+}
+
+form .option p {
+    color: #595959;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+form .option :where(.list, li) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form .option .list li {
+    list-style: none;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+
+.option .list li:hover {
+    background: #f0f1f4;
+}
+
+.option .list li img {
+    cursor: pointer;
+    width: 23px;
+}
+
+form button {
+    height: 53px;
+    cursor: no-drop;
+    font-size: 18px;
+    font-weight: 500;
+    color: #bcc0c4;
+    border-radius: 7px;
+    background: #e2e5e9;
+}
+
+form textarea:valid~button {
+    color: #ffffff;
+    cursor: pointer;
+    background: #4599ff;
+}
+
+/* start here container2 div */
+
+/* .container2 {
+    position: relative;
+    width: 500px;
+
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.list {
+    list-style: none;
+
+}
+
+
+
+.container2 {
+
+    /* height: 100vh; */
+    width: 500px;
+    /* background: #ffffff; */
+    box-shadow: 0 12px 28 rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+
+}
+
+
+
+
+.post-body {
+    /* max-height: 80%;
+     max-width: 80%;  */
+    box-shadow: 2px 2px 12px 0px rgb(170, 170, 170);
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 9px;
+    margin-top: 5px;
+}
+
+.user-info {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* h2 {
+    position: relative;
+    display: inline-block;
+    top: -15px;
+} */
+
+.user p {
+    position: relative;
+    display: inline-block;
+    top: -15px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.userPic {
+    position: relative;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.date-time {
+    position: relative;
+    margin-left: 3.5rem;
+    top: -20px;
+}
+
+.description {
+    position: relative;
+    padding: 0.5rem;
+}
+
+.upload {
+    position: relative;
+    /* background-color: yellowgreen; */
+    font-size: 18px;
+    resize: none;
+    margin-top: -8px;
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.uplaod-image {
+    position: relative;
+    width: 100%;
+    resize: none;
+}
+
+.likes-comment-preview {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.like-preview {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.like-preview .fa-thumbs-up,
+.fa-heart {
+    position: relative;
+    border-radius: 50px;
+    background-color: rgb(19, 128, 200);
+    color: #ffffff;
+    padding: 5%;
+    border: 2px solid #ffffff;
+}
+
+.fa-thumbs-up {
+    z-index: 211;
+}
+
+.fa-heart {
+    background-color: rgb(226, 19, 19);
+    margin-left: -6px;
+}
+
+.count-likes {
+    margin-left: 2%;
+    margin-top: 5px;
+}
+
+.like-coment-share-icon {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid gray;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
+
+.like-coment-share-icon>div {
+    cursor: pointer;
+}
+
+.like-coment-share-icon>div:nth-child(1):focus {
+    color: rgb(19, 128, 200);
+}
+
+.like-coment-share-icon i {
+    font-size: 16px;
+}
+
+.post-option-icons>span {
+    position: relative;
+    margin: 0.1rem;
+    color: rgb(46, 46, 46);
+}
+
+.post-option-icons {
+    color: rgb(78, 78, 78);
+    font-size: 22px;
+}
